@@ -13,7 +13,7 @@ You can also choose to close the account if you wish to, but will have to refres
 The app also covers some other functionalities, like:  
 1 - an inactivity timer, which logs the user out after no actions have been taken in the last 2 minutes  
 2 - a sum of the current balance and a sum of all incoming, outgoing transactions and total interest accrued  
-3 - a sorting function  
+3 - a sorting function ( by price)  
 4 - an exact date of when the action was executed
 
 Have fun!

@@ -86,7 +86,7 @@ const formatMovementDate = function (date, locale) {
     Math.round(Math.abs(date2 - date1) / (1000 * 60 * 60 * 24));
 
   const daysPassed = calcDaysPassed(new Date(), date);
-  console.log(daysPassed);
+  // console.log(daysPassed);
 
   if (daysPassed === 0) return 'Today';
   if (daysPassed === 1) return 'Yesterday';
@@ -108,7 +108,7 @@ const formatCur = function (value, locale, currency) {
 
 const displayMovements = function (acc, sort = false) {
   containerMovements.innerHTML = '';
-
+  // console.log(acc.movements.slice());
   const movs = sort
     ? acc.movements.slice().sort((a, b) => a - b)
     : acc.movements;
@@ -357,6 +357,6 @@ btnClose.addEventListener('click', function (e) {
 let sorted = false;
 btnSort.addEventListener('click', function (e) {
   e.preventDefault();
-  displayMovements(currentAccount.movements, !sorted);
+  displayMovements(currentAccount, !sorted);
   sorted = !sorted;
 });
